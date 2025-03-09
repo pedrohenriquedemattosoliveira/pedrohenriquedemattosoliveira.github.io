@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos da Sala 3ºC</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  
+</head>
+<body>
+  
+    <header>
+        <h1>Terceiro C</h1>
+        <p class="subtitle">Memórias e momentos especiais</p>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar fotos...">
+            </div>
+            <div class="view-options">
+                <button class="view-btn active" id="grid-view">Grade</button>
+                <button class="view-btn" id="list-view">Lista</button>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <!-- As fotos serão inseridas aqui via JavaScript -->
+        </div>
+
+        <button class="load-more" id="load-more">Carregar mais fotos</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img id="modal-image" src="/api/placeholder/800/600" alt="Imagem ampliada">
+            <button class="close-modal" id="close-modal">✕</button>
+            <div class="modal-nav">
+                <button class="nav-btn" id="prev-btn">←</button>
+                <button class="nav-btn" id="next-btn">→</button>
+            </div>
+            <div class="modal-caption" id="modal-caption">Título da foto</div>
+        </div>
+    </div>
+
+    <script src="JS/scrip.js"></script>
+
+
+</body>
+</html>
